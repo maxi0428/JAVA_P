@@ -23,7 +23,7 @@ class Action extends JFrame implements ActionListener{
 	}
 	
 	// panel 2 (도서 조회 관련)에서 객체 생성 
-	public Action(frame f, test t) {
+	public Action(frame f, test t) { 
 		this.f=f;
 		this.t=t;
 	}
@@ -412,7 +412,7 @@ public class test {
 		// DB Connection 
 		try {
 			// Connection을 위해 필요한 DB Driver 로드
-			Class.forName("com.mysql.jdbc.Driver"); 
+			Class.forName("com.mysql.cj.jdbc.Driver"); 
 			System.out.println("DB Driver Loading OK!");
 			
 			// DB Connection 
